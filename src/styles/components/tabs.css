@@ -1,0 +1,49 @@
+
+/* Tabs styling */
+.tabs-list {
+  display: flex;
+  background-color: var(--amc-light);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.tab-trigger {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.2s ease;
+}
+
+.tab-trigger.active {
+  background-color: var(--amc-turquoise);
+  color: white;
+}
+
+/* Partners filter tabs */
+.partners-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.partner-filter-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.partner-filter-btn.active {
+  background-color: var(--amc-turquoise);
+  color: white;
+}
+
+.partner-filter-btn:hover:not(.active) {
+  background-color: var(--amc-light);
+}

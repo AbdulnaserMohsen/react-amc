@@ -1,0 +1,90 @@
+
+/* Button styles */
+.btn-outline {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 0.375rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: var(--amc-turquoise);
+}
+
+.btn-solid {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  text-align: center;
+  background-color: white;
+  color: var(--amc-teal);
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-solid:hover {
+  background-color: #f9fafb;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--amc-teal);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--amc-turquoise);
+}
+
+/* Calculator buttons */
+.calculator-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.next-step {
+  background-color: var(--amc-turquoise);
+  color: white;
+  border: none;
+}
+
+.next-step:hover {
+  background-color: var(--amc-teal);
+}
+
+.prev-step {
+  background-color: white;
+  color: var(--amc-dark);
+  border: 1px solid #d1d5db;
+}
+
+.prev-step:hover {
+  background-color: #f3f4f6;
+}
+
+.apply {
+  background-color: var(--amc-turquoise);
+  color: white;
+  border: none;
+}
+
+.apply:hover {
+  background-color: var(--amc-teal);
+}

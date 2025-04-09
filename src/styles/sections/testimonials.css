@@ -1,0 +1,131 @@
+
+/* Testimonials section styles */
+.testimonials-carousel {
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 1rem 0.5rem;
+  margin: -0.5rem;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-card {
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 calc(50% - 0.75rem);
+    max-width: calc(50% - 0.75rem);
+  }
+}
+
+.testimonial-rating {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.star {
+  color: #d1d5db;
+}
+
+.star.filled {
+  color: #fbbf24;
+}
+
+.testimonial-quote {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: var(--amc-turquoise);
+  opacity: 0.2;
+  font-weight: 700;
+  font-family: serif;
+}
+
+.testimonial-text {
+  color: #4b5563;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 1.5rem;
+}
+
+.author-image {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid var(--amc-turquoise);
+  padding: 0.125rem;
+  margin-right: 1rem;
+}
+
+.author-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.author-name {
+  font-weight: 600;
+  color: var(--amc-teal);
+}
+
+.author-title {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.carousel-prev,
+.carousel-next {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: var(--amc-turquoise);
+  color: white;
+  border-color: var(--amc-turquoise);
+}

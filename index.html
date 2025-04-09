@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMC Microfinance - Financial Solutions for Jordan</title>
+  <meta name="description" content="AMC offers microfinance solutions to empower individuals and businesses across Jordan with flexible, accessible financial services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="root">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 transition-all duration-300 bg-white">
+      <!-- Top bar with social links, phone and language -->
+      <div class="bg-amc-light py-1">
+        <div class="container-custom flex justify-between items-center">
+          <div class="flex items-center space-x-4">
+            <a href="#" class="text-sm text-gray-600 hover:text-amc-teal">
+              <span class="social-icon">📞</span> +962 6 500 1500
+            </a>
+            <div class="hidden sm:flex space-x-2">
+              <a href="#" class="social-icon" aria-label="Facebook">📱</a>
+              <a href="#" class="social-icon" aria-label="Twitter">📱</a>
+              <a href="#" class="social-icon" aria-label="Instagram">📱</a>
+            </div>
+          </div>
+          <div class="flex items-center space-x-4">
+            <a href="#" class="text-sm text-gray-600 hover:text-amc-teal">
+              <span class="social-icon">🌐</span> English
+            </a>
+            <a href="#" class="text-sm text-gray-600 hover:text-amc-teal">
+              <span class="social-icon">👤</span> Login
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Main navigation -->
+      <nav class="container-custom py-3">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <a href="/" class="flex items-center">
+            <span class="text-2xl font-bold text-amc-teal">AMC</span>
+            <span class="text-lg font-medium ml-1 text-gray-700">Microfinance</span>
+          </a>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobileMenuButton"
+              class="bg-amc-light p-2 rounded-full text-amc-dark hover:text-amc-turquoise"
+              aria-label="Open menu"
+            >
+              Menu
+            </button>
+          </div>
+
+          <!-- Desktop navigation -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="#" class="nav-link">About Us</a>
+            <div class="relative group">
+              <button class="nav-link flex items-center">
+                Products & Services
+                <span class="ml-1">▼</span>
+              </button>
+              <div class="nav-dropdown">
+                <a href="#" class="nav-dropdown-item">Individual Loans</a>
+                <a href="#" class="nav-dropdown-item">MSEs Loans</a>
+                <a href="#" class="nav-dropdown-item">Digital Services</a>
+                <a href="#" class="nav-dropdown-item">Loan Calculator</a>
+              </div>
+            </div>
+            <a href="#" class="nav-link">Digital Services</a>
+            <a href="#" class="nav-link">Contact Us</a>
+            <a href="#" class="nav-link">Branches</a>
+            <a href="#" class="btn-primary ml-4">Apply Online</a>
+          </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-50 pt-16">
+          <div class="absolute top-4 right-4">
+            <button id="closeMenu" class="p-2 rounded-full bg-amc-light text-amc-dark hover:text-amc-turquoise">
+              Close
+            </button>
+          </div>
+          
+          <div class="container p-4">
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="mobile-nav-link">About Us</a>
+              <div class="mobile-nav-link">
+                <button class="mobile-dropdown-trigger">
+                  <span>Products & Services</span>
+                  <span>▼</span>
+                </button>
+                <div class="mobile-dropdown-content">
+                  <a href="#" class="mobile-dropdown-item">Individual Loans</a>
+                  <a href="#" class="mobile-dropdown-item">MSEs Loans</a>
+                  <a href="#" class="mobile-dropdown-item">Digital Services</a>
+                  <a href="#" class="mobile-dropdown-item">Loan Calculator</a>
+                </div>
+              </div>
+              <a href="#" class="mobile-nav-link">Digital Services</a>
+              <a href="#" class="mobile-nav-link">Contact Us</a>
+              <a href="#" class="mobile-nav-link">Branches</a>
+            </div>
+            
+            <div class="mt-8">
+              <a href="#" class="btn-primary block text-center">Apply Online</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section - Updated to fix image display -->
+    <section class="hero-slide">
+      <div class="hero-content">
+        <div class="container-custom">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+            Financial Solutions <br>for Every Need
+          </h1>
+          <p class="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
+            Empowering individuals and businesses across Jordan with accessible
+            financial services tailored to your goals.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#" class="btn-primary">Apply for a Loan</a>
+            <a href="#" class="btn-outline border-white text-white hover:bg-white hover:text-amc-teal">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-padding bg-white relative overflow-hidden">
+      <!-- Background decoration -->
+      <div class="absolute top-0 right-0 w-1/3 h-1/3 bg-amc-light rounded-bl-full opacity-50 -z-10"></div>
+      <div class="absolute bottom-0 left-0 w-1/4 h-1/4 bg-amc-light rounded-tr-full opacity-50 -z-10"></div>
+      
+      <div class="container-custom">
+        <div class="text-center mb-12">
+          <span class="text-amc-turquoise font-medium">What We Offer</span>
+          <h2 class="text-4xl font-bold mt-2 mb-4">Our Services</h2>
+          <div class="w-20 h-1 bg-amc-turquoise mx-auto"></div>
+          <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+            Discover our range of financial solutions designed to meet your personal 
+            and business needs with flexible terms and competitive rates.
+          </p>
+        </div>
+        
+        <!-- Service Tabs -->
+        <div class="mb-8 flex justify-center">
+          <div class="tabs-list">
+            <button class="tab-trigger active" data-tab="all">All Services</button>
+            <button class="tab-trigger" data-tab="loans">Loans</button>
+            <button class="tab-trigger" data-tab="digital">Digital Services</button>
+          </div>
+        </div>
+        
+        <!-- Service Cards -->
+        <div class="grid-container">
+          <!-- Card 1 -->
+          <div class="flip-card" data-category="loans">
+            <div class="flip-card-inner">
+              <!-- Front of Card -->
+              <div class="flip-card-front">
+                <div class="card-image">
+                  <img src="/placeholder.svg" alt="Individual Loans">
+                  <div class="image-overlay"></div>
+                  <div class="card-title">
+                    <h3>Individual Loans</h3>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p>Easy access personal loans to fulfill your needs</p>
+                  
+                  <div class="features">
+                    <div class="feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Competitive interest rates</span>
+                    </div>
+                    <div class="feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Flexible payment terms</span>
+                    </div>
+                    <div class="feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Quick approval process</span>
+                    </div>
+                  </div>
+                  
+                  <div class="flip-button">
+                    <button class="icon-button" aria-label="Flip for more">→</button>
+                    <span class="tooltip">Flip for more</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Back of Card -->
+              <div class="flip-card-back">
+                <div class="back-content">
+                  <h3>Individual Loans Details</h3>
+                  <p>Easy access personal loans to fulfill your needs</p>
+                  
+                  <div class="back-features">
+                    <h4>Key Benefits:</h4>
+                    <div class="back-feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Competitive interest rates</span>
+                    </div>
+                    <div class="back-feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Flexible payment terms</span>
+                    </div>
+                    <div class="back-feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Quick approval process</span>
+                    </div>
+                  </div>
+                  
+                  <div class="back-buttons">
+                    <a href="/products/individual" class="btn-outline">Learn More</a>
+                    <a href="/apply/individual" class="btn-solid">Apply Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flip-card" data-category="loans">
+            <div class="flip-card-inner">
+              <!-- Front of Card -->
+              <div class="flip-card-front">
+                <div class="card-image">
+                  <img src="/placeholder.svg" alt="MSEs Loans">
+                  <div class="image-overlay"></div>
+                  <div class="card-title">
+                    <h3>MSEs Loans</h3>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p>Supporting small businesses and entrepreneurs</p>
+                  
+                  <div class="features">
+                    <div class="feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Business expansion financing</span>
+                    </div>
+                    <div class="feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Equipment & inventory loans</span>
+                    </div>
+                    <div class="feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Tailored repayment schedules</span>
+                    </div>
+                  </div>
+                  
+                  <div class="flip-button">
+                    <button class="icon-button" aria-label="Flip for more">→</button>
+                    <span class="tooltip">Flip for more</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Back of Card -->
+              <div class="flip-card-back">
+                <div class="back-content">
+                  <h3>MSEs Loans Details</h3>
+                  <p>Supporting small businesses and entrepreneurs</p>
+                  
+                  <div class="back-features">
+                    <h4>Key Benefits:</h4>
+                    <div class="back-feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Business expansion financing</span>
+                    </div>
+                    <div class="back-feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Equipment & inventory loans</span>
+                    </div>
+                    <div class="back-feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Tailored repayment schedules</span>
+                    </div>
+                  </div>
+                  
+                  <div class="back-buttons">
+                    <a href="/products/mses" class="btn-outline">Learn More</a>
+                    <a href="/apply/mses" class="btn-solid">Apply Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flip-card" data-category="digital">
+            <div class="flip-card-inner">
+              <!-- Front of Card -->
+              <div class="flip-card-front">
+                <div class="card-image">
+                  <img src="/placeholder.svg" alt="Digital Services">
+                  <div class="image-overlay"></div>
+                  <div class="card-title">
+                    <h3>Digital Services</h3>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <p>Access our services anytime, anywhere</p>
+                  
+                  <div class="features">
+                    <div class="feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Mobile app accessibility</span>
+                    </div>
+                    <div class="feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Online loan applications</span>
+                    </div>
+                    <div class="feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Secure payment options</span>
+                    </div>
+                  </div>
+                  
+                  <div class="flip-button">
+                    <button class="icon-button" aria-label="Flip for more">→</button>
+                    <span class="tooltip">Flip for more</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Back of Card -->
+              <div class="flip-card-back">
+                <div class="back-content">
+                  <h3>Digital Services Details</h3>
+                  <p>Access our services anytime, anywhere</p>
+                  
+                  <div class="back-features">
+                    <h4>Key Benefits:</h4>
+                    <div class="back-feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Mobile app accessibility</span>
+                    </div>
+                    <div class="back-feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Online loan applications</span>
+                    </div>
+                    <div class="back-feature">
+                      <span class="feature-icon">✓</span>
+                      <span>Secure payment options</span>
+                    </div>
+                  </div>
+                  
+                  <div class="back-buttons">
+                    <a href="/digital" class="btn-outline">Learn More</a>
+                    <a href="/digital" class="btn-solid">Apply Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="py-24 relative bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <!-- Background decorative elements -->
+      <div class="absolute inset-0 overflow-hidden -z-10">
+        <div class="absolute -top-40 -left-40 w-80 h-80 bg-amc-light rounded-full opacity-60"></div>
+        <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-amc-light rounded-full opacity-40"></div>
+        <div class="absolute top-1/3 left-1/4 w-16 h-16 bg-amc-turquoise/10 rounded-full"></div>
+        <div class="absolute bottom-1/4 right-1/3 w-24 h-24 bg-amc-purple/10 rounded-full"></div>
+        <div class="absolute top-1/2 right-1/4 w-12 h-12 bg-amc-yellow/10 rounded-full"></div>
+      </div>
+      
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16 relative">
+          <span class="inline-block px-3 py-1 text-amc-turquoise font-medium bg-amc-turquoise/10 rounded-full text-sm mb-3">
+            Our Growth Story
+          </span>
+          <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-amc-teal to-amc-turquoise inline-block">
+            Our Impact
+          </h2>
+          <div class="w-20 h-1 bg-amc-turquoise mx-auto mb-6 rounded-full"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+            For over a decade, AMC has been dedicated to empowering individuals and businesses 
+            across Jordan through accessible financial services.
+          </p>
+        </div>
+        
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-20 impact-stats">
+          <!-- Stat 1 -->
+          <div class="impact-card bg-gradient-to-r from-amc-teal to-amc-turquoise">
+            <div class="stat-icon">TrendingUp</div>
+            <div class="stat-content">
+              <div class="stat-number" data-count="254">0</div>
+              <h3 class="stat-title">Million JODs</h3>
+              <p class="stat-subtitle">Loans Disbursed</p>
+              <p class="stat-description">Supporting businesses and individuals across Jordan</p>
+            </div>
+          </div>
+          
+          <!-- Stat 2 -->
+          <div class="impact-card bg-gradient-to-br from-amc-purple to-purple-700">
+            <div class="stat-icon">Building</div>
+            <div class="stat-content">
+              <div class="stat-number" data-count="24">0</div>
+              <h3 class="stat-title">Branches</h3>
+              <p class="stat-subtitle">Nationwide Coverage</p>
+              <p class="stat-description">Serving communities in every governorate</p>
+            </div>
+          </div>
+          
+          <!-- Stat 3 -->
+          <div class="impact-card bg-gradient-to-r from-amc-yellow to-amber-400">
+            <div class="stat-icon">Users</div>
+            <div class="stat-content">
+              <div class="stat-number" data-count="304">0</div>
+              <h3 class="stat-title">Thousand Clients</h3>
+              <p class="stat-subtitle">Served and Growing</p>
+              <p class="stat-description">Empowering Jordanians with financial solutions</p>
+            </div>
+          </div>
+          
+          <!-- Stat 4 -->
+          <div class="impact-card bg-gradient-to-br from-amc-turquoise to-cyan-500">
+            <div class="stat-icon">Award</div>
+            <div class="stat-content">
+              <div class="stat-number" data-count="18">0</div>
+              <h3 class="stat-title">Years</h3>
+              <p class="stat-subtitle">Of Trusted Service</p>
+              <p class="stat-description">Building a legacy of financial inclusion</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Journey Timeline -->
+        <div class="max-w-5xl mx-auto">
+          <div class="timeline-container">
+            <!-- Timeline line -->
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-markers">
+              <div class="timeline-marker">
+                <div class="marker-year">2005</div>
+                <div class="marker-content">
+                  <p class="marker-title">Founded</p>
+                  <p class="marker-description">Our journey began</p>
+                </div>
+              </div>
+              
+              <div class="timeline-marker">
+                <div class="marker-year">2010</div>
+                <div class="marker-content">
+                  <p class="marker-title">10K Clients</p>
+                  <p class="marker-description">First milestone</p>
+                </div>
+              </div>
+              
+              <div class="timeline-marker">
+                <div class="marker-year">2015</div>
+                <div class="marker-content">
+                  <p class="marker-title">100K Clients</p>
+                  <p class="marker-description">Rapid growth</p>
+                </div>
+              </div>
+              
+              <div class="timeline-marker">
+                <div class="marker-year">2023</div>
+                <div class="marker-content">
+                  <p class="marker-title">300K+ Clients</p>
+                  <p class="marker-description">Market leader</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Additional context -->
+          <div class="text-center mt-16">
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              As we continue to grow, our commitment remains the same: providing accessible 
+              financial solutions that empower Jordanians to achieve their goals.
+            </p>
+            <a href="#" class="btn-primary mt-6">Learn More About Our Journey</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loan Calculator Section -->
+    <section class="section-padding bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+      <!-- Background decoration -->
+      <div class="absolute top-1/2 left-0 transform -translate-y-1/2 w-64 h-64 bg-amc-turquoise rounded-full opacity-5"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-amc-purple rounded-full opacity-5"></div>
+      
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <span class="text-amc-turquoise font-medium">Financial Planning</span>
+          <h2 class="text-4xl font-bold mt-2 mb-4">Calculate Your Premium</h2>
+          <div class="w-20 h-1 bg-amc-turquoise mx-auto"></div>
+          <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+            Use our interactive calculator to estimate your monthly payments and total cost
+            based on your loan amount and preferred terms.
+          </p>
+        </div>
+        
+        <div class="loan-calculator-card max-w-4xl mx-auto shadow-xl border-none overflow-hidden bg-white">
+          <div class="grid grid-cols-1 lg:grid-cols-5">
+            <div class="col-span-3 p-6 lg:p-8">
+              <!-- Step indicators -->
+              <div class="calculator-steps relative">
+                <div class="step active">
+                  <div class="step-circle"><span>1</span></div>
+                  <span class="step-label">Loan Type</span>
+                </div>
+                <div class="step">
+                  <div class="step-circle"><span>2</span></div>
+                  <span class="step-label">Amount</span>
+                </div>
+                <div class="step">
+                  <div class="step-circle"><span>3</span></div>
+                  <span class="step-label">Term</span>
+                </div>
+              </div>
+              
+              <!-- Calculator Content - Step 1 by default -->
+              <div class="calculator-content" id="step1">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Select Loan Type</h3>
+                <div class="loan-type-tabs">
+                  <button class="loan-type-tab active" data-type="individual">Individual</button>
+                  <button class="loan-type-tab" data-type="mses">MSEs</button>
+                </div>
+                
+                <div class="loan-type-info">
+                  <h4 class="font-medium mb-1">Individual Loan</h4>
+                  <p class="text-sm text-gray-600">
+                    Personal loans with competitive rates designed to meet your individual needs.
+                  </p>
+                  <div class="mt-3 text-sm">
+                    <span class="font-medium">Interest rate:</span> 12.00%
+                  </div>
+                </div>
+                
+                <div class="calculator-nav">
+                  <button class="calculator-btn next-step">Next</button>
+                </div>
+              </div>
+              
+              <!-- Step 2 (hidden by default) -->
+              <div class="calculator-content hidden" id="step2">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Select Loan Amount</h3>
+                
+                <div class="amount-controls">
+                  <label for="loanAmount">Loan Amount (JOD)</label>
+                  <div class="amount-input">
+                    <input type="number" id="loanAmount" value="5000" min="200" max="50000">
+                    <span class="currency">JOD</span>
+                  </div>
+                </div>
+                
+                <div class="amount-slider">
+                  <span class="min-amount">200</span>
+                  <input type="range" id="amountSlider" min="200" max="50000" step="100" value="5000" class="slider">
+                  <span class="max-amount">50,000</span>
+                </div>
+                
+                <div class="calculator-nav">
+                  <button class="calculator-btn prev-step">Back</button>
+                  <button class="calculator-btn next-step">Next</button>
+                </div>
+              </div>
+              
+              <!-- Step 3 (hidden by default) -->
+              <div class="calculator-content hidden" id="step3">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Select Loan Term</h3>
+                
+                <div class="term-display">
+                  <label for="termSlider">Number of Months</label>
+                  <span id="termValue">24 months</span>
+                </div>
+                
+                <div class="term-slider">
+                  <span class="min-term">6</span>
+                  <input type="range" id="termSlider" min="6" max="60" step="1" value="24" class="slider">
+                  <span class="max-term">60</span>
+                </div>
+                
+                <div class="term-presets">
+                  <button class="term-preset" data-term="12">12 Months</button>
+                  <button class="term-preset active" data-term="24">24 Months</button>
+                  <button class="term-preset" data-term="36">36 Months</button>
+                </div>
+                
+                <div class="calculator-nav">
+                  <button class="calculator-btn prev-step">Back</button>
+                  <button class="calculator-btn apply">Apply for Loan</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-span-2 bg-gradient-to-br from-amc-teal to-amc-turquoise p-6 lg:p-8 flex flex-col text-white">
+              <h3 class="text-lg font-semibold mb-6">Loan Summary</h3>
+              
+              <div class="loan-summary-items">
+                <div class="summary-item">
+                  <p class="summary-label">Monthly Payment</p>
+                  <p class="summary-value" id="monthlyPayment">235.37 JOD</p>
+                </div>
+                
+                <div class="summary-item">
+                  <p class="summary-label">Total Payments</p>
+                  <p class="summary-value" id="totalPayment">5,648.88 JOD</p>
+                </div>
+                
+                <div class="summary-item">
+                  <p class="summary-label">Total Interest</p>
+                  <p class="summary-value" id="totalInterest">648.88 JOD</p>
+                </div>
+              </div>
+              
+              <div class="loan-details">
+                <div class="loan-detail-item">
+                  <span>Loan Amount:</span>
+                  <span id="summaryAmount">5,000 JOD</span>
+                </div>
+                <div class="loan-detail-item">
+                  <span>Loan Term:</span>
+                  <span id="summaryTerm">24 Months</span>
+                </div>
+                <div class="loan-detail-item">
+                  <span>Interest Rate:</span>
+                  <span id="summaryRate">12.00%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding bg-gradient-to-b from-amc-light to-white">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <span class="text-amc-turquoise font-medium">Success Stories</span>
+          <h2 class="text-4xl font-bold mt-2 mb-4">Client Testimonials</h2>
+          <div class="w-20 h-1 bg-amc-turquoise mx-auto"></div>
+          <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+            Hear from our clients about how AMC has helped them achieve their goals 
+            and grow their businesses with tailored financial solutions.
+          </p>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="testimonials-carousel">
+            <div class="carousel-container">
+              <!-- Testimonial 1 -->
+              <div class="testimonial-card">
+                <div class="testimonial-rating">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                </div>
+                
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">AMC provided me with the financial support I needed to expand my business. Their process was simple, and the team was professional and supportive throughout.</p>
+                
+                <div class="testimonial-author">
+                  <div class="author-image">
+                    <img src="/placeholder.svg" alt="Ahmed Hassan">
+                  </div>
+                  <div class="author-info">
+                    <h4 class="author-name">Ahmed Hassan</h4>
+                    <p class="author-title">Small Business Owner</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Testimonial 2 -->
+              <div class="testimonial-card">
+                <div class="testimonial-rating">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star">★</span>
+                </div>
+                
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">Thanks to AMC's MSE loan, I was able to purchase new equipment for my workshop. The reasonable interest rates and flexible payment terms made it an ideal choice.</p>
+                
+                <div class="testimonial-author">
+                  <div class="author-image">
+                    <img src="/placeholder.svg" alt="Sara Mahmoud">
+                  </div>
+                  <div class="author-info">
+                    <h4 class="author-name">Sara Mahmoud</h4>
+                    <p class="author-title">Entrepreneur</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Testimonial 3 -->
+              <div class="testimonial-card">
+                <div class="testimonial-rating">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                </div>
+                
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">The digital services provided by AMC have made managing my loan incredibly convenient. I can check balances and make payments right from my smartphone.</p>
+                
+                <div class="testimonial-author">
+                  <div class="author-image">
+                    <img src="/placeholder.svg" alt="Omar Khalid">
+                  </div>
+                  <div class="author-info">
+                    <h4 class="author-name">Omar Khalid</h4>
+                    <p class="author-title">Retail Store Owner</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Testimonial 4 -->
+              <div class="testimonial-card">
+                <div class="testimonial-rating">
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                  <span class="star filled">★</span>
+                </div>
+                
+                <div class="testimonial-quote">"</div>
+                <p class="testimonial-text">After struggling to secure funding elsewhere, AMC believed in my business plan and provided the capital I needed. Their ongoing support has been invaluable.</p>
+                
+                <div class="testimonial-author">
+                  <div class="author-image">
+                    <img src="/placeholder.svg" alt="Layla Mahmood">
+                  </div>
+                  <div class="author-info">
+                    <h4 class="author-name">Layla Mahmood</h4>
+                    <p class="author-title">Restaurant Owner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="carousel-controls">
+              <button class="carousel-prev">←</button>
+              <button class="carousel-next">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section - Fixed the missing data-filter attributes -->
+    <section class="py-20 bg-white relative overflow-hidden">
+      <div class="container-custom mb-10">
+        <div class="text-center mb-10">
